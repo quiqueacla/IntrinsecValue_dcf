@@ -187,7 +187,9 @@ def print_report(result: ValuationResult) -> None:
             ("Cost of loans", _percent(diag.get("cost_of_debt_before_tax"))),
             ("Tax Rate", _percent(diag.get("tax_rate_mean"))),
             ("Cost of Debt", _percent(diag.get("cost_of_debt_after_tax"))),
+            ("WACC calculado", _percent(diag.get("wacc_calculated"))),            
             ("WACC utilizado", _percent(diag.get("wacc_used"))),
+
         ],
         columns=["COST OF DEBT", "Value"],
     )
